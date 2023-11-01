@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}<title>顯示所有資料</title>{% endblock %}
+{% block content %}
+<h2 align="left">顯示 41018114 資料表所有資料</h2>
+<table border="1" cellpadding="0" cellspacing="0">
+	<th>學號</th><th>姓名</th>
+	{% for student in students %}
+		<tr>
+			<td>{{ student.cPhone }} </td>
+			<td>{{ student.cName }} </td>
+		</tr>
+	{% endfor %}
+</table>
+{% endblock %}	
